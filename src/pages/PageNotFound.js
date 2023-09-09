@@ -7,7 +7,7 @@ export const PageNotFound = () => {
       <section className="pnf">
         <div className="oops">
           <p data-testid="pnfText">Oops - Page Not Found!</p>
-          <img src={PageNotFoundImage } alt="" />
+          <img src={PageNotFoundImage } alt="Page Not Found!" />
           <Link to="/">
             <button data-testid="homeBtn">Go Back To Word Counter</button>
           </Link>
