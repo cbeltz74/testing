@@ -11,17 +11,17 @@ describe("Counter component test", () => {
         expect(textArea).toBeTruthy();
     });
     
-    test("render the result", () => {
+    test("render the character result", () => {
         const { getByTestId } = render(<Counter />);
         const charLength = getByTestId("charLength");
         expect(charLength.innerHTML).toBe("Character: 0");
     });
 
-    // test("render the word result", () => {
-    //     render(<Counter />);
-    //     const wordLength = screen.getByTestId("wordLength");
-    //     expect(wordLength).toBeTruthy();
-    // });
+    test("render the word result", () => {
+        render(<Counter />);
+        const wordLength = screen.getByTestId("wordLength");
+        expect(wordLength).toBeTruthy();
+    });
 
     test("render the word result", () => {
         render(<Counter />);
